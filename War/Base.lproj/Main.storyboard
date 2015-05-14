@@ -21,9 +21,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vGZ-XI-Jzr" userLabel="BackGroundImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
-                                </variation>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tZ-m6-hTW" userLabel="CardContainerView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -141,16 +138,16 @@
                                 <exclude reference="7VC-AP-CF4"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="PrH-e6-3Fs"/>
+                                <exclude reference="cbg-UT-InU"/>
                                 <exclude reference="5am-b9-TKG"/>
                                 <exclude reference="e8E-Si-sQa"/>
                                 <exclude reference="iYl-BX-XTw"/>
-                                <exclude reference="jEQ-av-lMl"/>
-                                <exclude reference="rdE-hs-dNe"/>
                                 <exclude reference="A8Z-Ny-Fgb"/>
                                 <exclude reference="PqD-E4-xrm"/>
                                 <exclude reference="ZZE-LL-thg"/>
-                                <exclude reference="PrH-e6-3Fs"/>
-                                <exclude reference="cbg-UT-InU"/>
+                                <exclude reference="jEQ-av-lMl"/>
+                                <exclude reference="rdE-hs-dNe"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -160,16 +157,16 @@
                                 <include reference="7VC-AP-CF4"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="PrH-e6-3Fs"/>
+                                <include reference="cbg-UT-InU"/>
                                 <include reference="5am-b9-TKG"/>
                                 <include reference="e8E-Si-sQa"/>
                                 <include reference="iYl-BX-XTw"/>
-                                <include reference="jEQ-av-lMl"/>
-                                <include reference="rdE-hs-dNe"/>
                                 <include reference="A8Z-Ny-Fgb"/>
                                 <include reference="PqD-E4-xrm"/>
                                 <include reference="ZZE-LL-thg"/>
-                                <include reference="PrH-e6-3Fs"/>
-                                <include reference="cbg-UT-InU"/>
+                                <include reference="jEQ-av-lMl"/>
+                                <include reference="rdE-hs-dNe"/>
                             </mask>
                         </variation>
                     </view>
