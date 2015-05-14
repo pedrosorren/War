@@ -104,9 +104,6 @@
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="142" y="93" width="84" height="30"/>
                                         </variation>
-                                        <connections>
-                                            <action selector="playRoundTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5F5-bk-olc"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <variation key="default">
@@ -179,7 +176,6 @@
                         <outlet property="SecondCardView" destination="uLr-7Y-Vho" id="zx0-uE-TOx"/>
                         <outlet property="backgroundImageView" destination="vGZ-XI-Jzr" id="j6H-yJ-kS2"/>
                         <outlet property="playRoundButton" destination="SDY-1N-KVG" id="X3g-oi-pOZ"/>
-                        <outlet property="playRoundTapped" destination="SDY-1N-KVG" id="duv-N2-roa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
