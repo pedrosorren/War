@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -17,6 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vGZ-XI-Jzr" userLabel="BackGroundImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+                                </variation>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tZ-m6-hTW" userLabel="CardContainerView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
@@ -115,38 +123,52 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vGZ-XI-Jzr" secondAttribute="trailing" id="5am-b9-TKG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7VC-AP-CF4" secondAttribute="trailing" id="A8Z-Ny-Fgb"/>
                             <constraint firstItem="7VC-AP-CF4" firstAttribute="top" secondItem="7tZ-m6-hTW" secondAttribute="bottom" id="PqD-E4-xrm"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="vGZ-XI-Jzr" secondAttribute="bottom" id="PrH-e6-3Fs"/>
                             <constraint firstItem="7VC-AP-CF4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ZZE-LL-thg"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="7VC-AP-CF4" secondAttribute="bottom" id="cbg-UT-InU"/>
+                            <constraint firstItem="vGZ-XI-Jzr" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="e8E-Si-sQa"/>
+                            <constraint firstItem="vGZ-XI-Jzr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="iYl-BX-XTw"/>
                             <constraint firstAttribute="centerX" secondItem="7tZ-m6-hTW" secondAttribute="centerX" id="jEQ-av-lMl"/>
                             <constraint firstAttribute="centerY" secondItem="7tZ-m6-hTW" secondAttribute="centerY" id="rdE-hs-dNe"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="vGZ-XI-Jzr"/>
                                 <exclude reference="7tZ-m6-hTW"/>
                                 <exclude reference="7VC-AP-CF4"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="5am-b9-TKG"/>
+                                <exclude reference="e8E-Si-sQa"/>
+                                <exclude reference="iYl-BX-XTw"/>
                                 <exclude reference="jEQ-av-lMl"/>
                                 <exclude reference="rdE-hs-dNe"/>
                                 <exclude reference="A8Z-Ny-Fgb"/>
                                 <exclude reference="PqD-E4-xrm"/>
                                 <exclude reference="ZZE-LL-thg"/>
+                                <exclude reference="PrH-e6-3Fs"/>
                                 <exclude reference="cbg-UT-InU"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="vGZ-XI-Jzr"/>
                                 <include reference="7tZ-m6-hTW"/>
                                 <include reference="7VC-AP-CF4"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="5am-b9-TKG"/>
+                                <include reference="e8E-Si-sQa"/>
+                                <include reference="iYl-BX-XTw"/>
                                 <include reference="jEQ-av-lMl"/>
                                 <include reference="rdE-hs-dNe"/>
                                 <include reference="A8Z-Ny-Fgb"/>
                                 <include reference="PqD-E4-xrm"/>
                                 <include reference="ZZE-LL-thg"/>
+                                <include reference="PrH-e6-3Fs"/>
                                 <include reference="cbg-UT-InU"/>
                             </mask>
                         </variation>
