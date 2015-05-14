@@ -170,9 +170,17 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="FirstCardImageView" destination="685-oD-qvN" id="NnW-IF-1NW"/>
+                        <outlet property="SecondCardImageView" destination="uLr-7Y-Vho" id="pRc-BM-gW5"/>
+                        <outlet property="SecondCardView" destination="uLr-7Y-Vho" id="zx0-uE-TOx"/>
+                        <outlet property="backgroundImageView" destination="vGZ-XI-Jzr" id="j6H-yJ-kS2"/>
+                        <outlet property="playRoundButton" destination="SDY-1N-KVG" id="X3g-oi-pOZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="492" y="381"/>
         </scene>
     </scenes>
 </document>
