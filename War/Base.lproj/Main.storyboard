@@ -18,13 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vGZ-XI-Jzr" userLabel="BackGroundImageView">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
-                                </variation>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tZ-m6-hTW" userLabel="CardContainerView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
@@ -120,6 +113,10 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vGZ-XI-Jzr" userLabel="BackGroundImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -136,46 +133,53 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="vGZ-XI-Jzr"/>
                                 <exclude reference="7tZ-m6-hTW"/>
                                 <exclude reference="7VC-AP-CF4"/>
+                                <exclude reference="vGZ-XI-Jzr"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="PrH-e6-3Fs"/>
+                                <exclude reference="cbg-UT-InU"/>
                                 <exclude reference="5am-b9-TKG"/>
                                 <exclude reference="e8E-Si-sQa"/>
                                 <exclude reference="iYl-BX-XTw"/>
-                                <exclude reference="jEQ-av-lMl"/>
-                                <exclude reference="rdE-hs-dNe"/>
                                 <exclude reference="A8Z-Ny-Fgb"/>
                                 <exclude reference="PqD-E4-xrm"/>
                                 <exclude reference="ZZE-LL-thg"/>
-                                <exclude reference="PrH-e6-3Fs"/>
-                                <exclude reference="cbg-UT-InU"/>
+                                <exclude reference="jEQ-av-lMl"/>
+                                <exclude reference="rdE-hs-dNe"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="vGZ-XI-Jzr"/>
                                 <include reference="7tZ-m6-hTW"/>
                                 <include reference="7VC-AP-CF4"/>
+                                <include reference="vGZ-XI-Jzr"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="PrH-e6-3Fs"/>
+                                <include reference="cbg-UT-InU"/>
                                 <include reference="5am-b9-TKG"/>
                                 <include reference="e8E-Si-sQa"/>
                                 <include reference="iYl-BX-XTw"/>
-                                <include reference="jEQ-av-lMl"/>
-                                <include reference="rdE-hs-dNe"/>
                                 <include reference="A8Z-Ny-Fgb"/>
                                 <include reference="PqD-E4-xrm"/>
                                 <include reference="ZZE-LL-thg"/>
-                                <include reference="PrH-e6-3Fs"/>
-                                <include reference="cbg-UT-InU"/>
+                                <include reference="jEQ-av-lMl"/>
+                                <include reference="rdE-hs-dNe"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="vGZ-XI-Jzr" id="bm9-2i-zq9"/>
+                        <outlet property="firstCardImageView" destination="685-oD-qvN" id="bWx-q0-GcD"/>
+                        <outlet property="playRoundButton" destination="SDY-1N-KVG" id="YmV-UE-hUJ"/>
+                        <outlet property="secondCardImageView" destination="uLr-7Y-Vho" id="S1h-RW-iqc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-25.5" y="440"/>
         </scene>
     </scenes>
 </document>
