@@ -27,6 +27,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func playRoundTapped(sender: UIButton) {
+
+self.firstCardImageView.image = UIImage(named: "card2")
+self.secondCardImageView.image = UIImage(named: "card5")
+
     }
 
 }

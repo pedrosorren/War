@@ -18,19 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="XFQ-P2-ePa" userLabel="BackgroundImageView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="LeF-S7-HfU" userLabel="Background">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="-4" y="0.0" width="409" height="605"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="606"/>
                                 </variation>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tZ-m6-hTW" userLabel="CardContainerView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card1" translatesAutoresizingMaskIntoConstraints="NO" id="685-oD-qvN" userLabel="FirstCardImage">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="685-oD-qvN" userLabel="FirstCardImage">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="cB0-NR-PC7"/>
                                             <constraint firstAttribute="height" constant="170" id="sHD-4o-xCz"/>
@@ -48,9 +46,8 @@
                                             </mask>
                                         </variation>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card6" translatesAutoresizingMaskIntoConstraints="NO" id="uLr-7Y-Vho" userLabel="SecondCardImage">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="uLr-7Y-Vho" userLabel="SecondCardImage">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <color key="backgroundColor" red="0.50196081399917603" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -126,12 +123,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="XFQ-P2-ePa" secondAttribute="trailing" id="7Og-ml-FUx"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7VC-AP-CF4" secondAttribute="trailing" id="A8Z-Ny-Fgb"/>
                             <constraint firstItem="7VC-AP-CF4" firstAttribute="top" secondItem="7tZ-m6-hTW" secondAttribute="bottom" id="PqD-E4-xrm"/>
-                            <constraint firstItem="XFQ-P2-ePa" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="TwY-K4-7ZQ"/>
-                            <constraint firstItem="XFQ-P2-ePa" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="U3n-KG-H4L"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="XFQ-P2-ePa" secondAttribute="bottom" id="XTP-Je-XCr"/>
                             <constraint firstItem="7VC-AP-CF4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ZZE-LL-thg"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="7VC-AP-CF4" secondAttribute="bottom" id="cbg-UT-InU"/>
                             <constraint firstAttribute="centerX" secondItem="7tZ-m6-hTW" secondAttribute="centerX" id="jEQ-av-lMl"/>
@@ -139,15 +132,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="XFQ-P2-ePa"/>
+                                <exclude reference="LeF-S7-HfU"/>
                                 <exclude reference="7tZ-m6-hTW"/>
                                 <exclude reference="7VC-AP-CF4"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="7Og-ml-FUx"/>
-                                <exclude reference="TwY-K4-7ZQ"/>
-                                <exclude reference="U3n-KG-H4L"/>
-                                <exclude reference="XTP-Je-XCr"/>
                                 <exclude reference="jEQ-av-lMl"/>
                                 <exclude reference="rdE-hs-dNe"/>
                                 <exclude reference="A8Z-Ny-Fgb"/>
@@ -158,15 +147,11 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="XFQ-P2-ePa"/>
+                                <include reference="LeF-S7-HfU"/>
                                 <include reference="7tZ-m6-hTW"/>
                                 <include reference="7VC-AP-CF4"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="7Og-ml-FUx"/>
-                                <include reference="TwY-K4-7ZQ"/>
-                                <include reference="U3n-KG-H4L"/>
-                                <include reference="XTP-Je-XCr"/>
                                 <include reference="jEQ-av-lMl"/>
                                 <include reference="rdE-hs-dNe"/>
                                 <include reference="A8Z-Ny-Fgb"/>
@@ -177,7 +162,6 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="backgroundImageView" destination="XFQ-P2-ePa" id="ddb-4W-jqb"/>
                         <outlet property="firstCardImageView" destination="685-oD-qvN" id="bWx-q0-GcD"/>
                         <outlet property="playRoundButton" destination="SDY-1N-KVG" id="YmV-UE-hUJ"/>
                         <outlet property="secondCardImageView" destination="uLr-7Y-Vho" id="S1h-RW-iqc"/>
@@ -189,8 +173,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back" width="120" height="170"/>
         <image name="background" width="667" height="622"/>
-        <image name="card1" width="120" height="170"/>
-        <image name="card6" width="120" height="170"/>
     </resources>
 </document>
